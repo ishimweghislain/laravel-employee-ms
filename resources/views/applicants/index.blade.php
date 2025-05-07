@@ -83,6 +83,12 @@
         </div>
     @endif
 
+    @if(session('error'))
+    <div class="error-message">
+        {{ session('error') }}
+    </div>
+    @endif
+
     <div class="table-container">
         <table>
             <thead>
